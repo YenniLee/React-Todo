@@ -1,6 +1,8 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
+import './components/TodoComponents/Todo.css';
+
 
 const todoData = [
   {
@@ -63,14 +65,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="todo-container">
         <h2>My Todo List</h2>
         <TodoForm addItem ={this.addItem} />
-        <TodoList 
-          todos={this.state.todos}
-          toggleItem={this.toggleItem}
-          clearCompleted={this.clearCompleted}
-        />
+        <div className='list-container'>
+          <TodoList 
+            todos={this.state.todos}
+            toggleItem={this.toggleItem}
+            clearCompleted={this.clearCompleted}
+          />
+        </div>
       </div>
     );
   }
