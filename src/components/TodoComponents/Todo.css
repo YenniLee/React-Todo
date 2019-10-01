@@ -1,0 +1,34 @@
+.item.completed {
+    text-decoration: line-through;
+}
+
+button {
+    background: plum;
+    border-radius: 15px;
+    padding: 6px 15px;
+    font-weight: bold;
+    color: #FAFAFA;
+    border: 2px solid #FAFAFA;
+}
+
+p {
+    margin-left: 16px;
+}
+
+.todo-container {
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+.list-container {
+    border: 2px solid pink;
+    width: 50vw;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    max-height: 60vh;
+    justify-content: space-between;
+}
